@@ -113,6 +113,23 @@ import 'package:flutter/material.dart';
                       SizedBox(height: 5),
                       Text("About this place",style: AppWidget.headlinetextstyle(22),),
                       Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",style: AppWidget.normaltextstyle(16),),
+                      SizedBox(height: 20),
+                      Material(
+                        elevation: 3,borderRadius: BorderRadius.circular(20),
+                        child: Container(
+                          padding: EdgeInsets.all(10),
+                          height: 200,
+                          width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(height: 10),
+                            Text("\$100 for 4 nights",style:AppWidget.headlinetextstyle(20))
+                            ],),
+                        ),
+                      ),
+                      SizedBox(height: 30,)
                     ],
                   ),
                 )
